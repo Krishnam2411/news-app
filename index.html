@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - latest updates</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="flex limit">
+      <div class="logo">
+        <img src="logo.png" alt="News" id="logo" />
+      </div>
+      <ul class="nav-list flex">
+        <li class="hover-link" id="politics" onclick="changeNewsTab('politics')">
+          Politics
+        </li>
+        <li
+          class="hover-link"
+          id="technology"
+          onclick="changeNewsTab('technology')"
+        >
+          Technology
+        </li>
+        <li class="hover-link" id="finance" onclick="changeNewsTab('finance')">
+          Finance
+        </li>
+        <li class="hover-link" id="sports" onclick="changeNewsTab('sports')">
+          Sports
+        </li>
+      </ul>
+      <div class="search-box">
+          <input
+            type="search"
+            name="search"
+            placeholder="search"
+            id="search-bar"
+          />
+          <button id="submit-button">Submit</button>
+<!--        <form>-->
+<!--        </form>-->
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container limit" id="cards-container">
+<!--        <div class="news-card">-->
+<!--          <div class="card-image">-->
+<!--            <img src="https://via.placeholder.com/300x200" />-->
+<!--          </div>-->
+<!--          <div class="card-content">-->
+<!--            <h3 id="news-title">Title is here</h3>-->
+<!--            <h6 id="news-source">Source is here</h6>-->
+<!--            <p id="news-desc">-->
+<!--              Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
+<!--              Repudiandallagregregreggeragesm.-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+    </main>
+    <template id="template-news-card">
+      <div class="news-card">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/300x200" id="news-img" />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">Title is here</h3>
+          <h6 id="news-source">Source is here</h6>
+          <p id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandallagregregreggeragesm.
+          </p>
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
