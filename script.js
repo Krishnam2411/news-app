@@ -58,11 +58,6 @@ function dataIntoCards(card, article){
 
 function searchFor(search) {
     fetchNews(search);
-    // if(selectedTab != null){
-    //     selectedTab.classList.remove("active");
-    //     selectedTab = document.getElementById(search);
-    //     selectedTab.classList.add("active");
-    // }
 }
 
 function changeNewsTab(search){
